@@ -1,45 +1,45 @@
 // global variables
-// PropertiesService.getScriptProperties().setProperty('list', '');    // ¨S¶ñ¤H­û
-//   var list = PropertiesService.getScriptProperties().getProperty('list');       // ¨ú±olist­È
+// PropertiesService.getScriptProperties().setProperty('list', '');    // æ²’å¡«äººå“¡
+//   var list = PropertiesService.getScriptProperties().getProperty('list');       // å–å¾—listå€¼
 
-// ½T»{¬O§_¶ñ¼gÂkÀç
+// ç¢ºèªæ˜¯å¦å¡«å¯«æ­¸ç‡Ÿ
 function CheckIfBack() {
   var mode=1;
   var ss=SpreadsheetApp.getActiveSpreadsheet();
-  var s=ss.getSheetByName('¨Æ¬Gªí')
+  var s=ss.getSheetByName('äº‹æ•…è¡¨');                                                // **æ›´æ”¹æˆè‡ªå·±çš„å·¥ä½œè¡¨åç¨±**
   //var lr=s.getLastRow()
-  var list=new Array();                                                        // ¨S¶ñ¤H­û
-  for(var i=30; i<=38; i++){
-    var ax=s.getRange(i,2).getValue();
-    var name=s.getRange(i,1).getValue();                                  // ¦W¦r
-    if(ax == ""){                                                        // ¨S¶ñÂkÀç
+  var list=new Array();                                                   // æ²’å¡«äººå“¡
+  for(var i=30; i<=38; i++){                                                       // **i è¨­å®šæˆè‡ªå·±è¦æª¢æŸ¥çš„åˆ—**
+    var ax=s.getRange(i,2).getValue();                                             // getRange(i, <è¦æª¢æŸ¥çš„è¡Œ>)
+    var name=s.getRange(i,1).getValue();                                 // åå­—    // getRange(ik, <åå­—çš„è¡Œ>)
+    if(ax == ""){                                                        // æ²’å¡«æ­¸ç‡Ÿ
       list.push(name);
     }
   }
   // var ax=s.getRange(30, 2).getValue();
   //    if(ax == ""){
-  //       ax = "§ÖÂI°Õ·F";
+  //       ax = "å¿«é»å•¦å¹¹";
   //       s.getRange(30, 2).setValue(ax);
   Send(list,1);
-  console.log("¤w¶Ç¥X");
+  console.log("å·²å‚³å‡º");
   console.log(list);
 }
 
   
-//µ{¦¡½X¶}©l
+//ç¨‹å¼ç¢¼é–‹å§‹
 
 function Send(list,mode){
 /* mode
-1 : ÂkÀç¨Æ¬G
+1 : æ­¸ç‡Ÿäº‹æ•…
  */
 
-  var token = "DmxZ9D5lK3JtCbRmMDsvs2GHQ79jlzs4OQZ7WuZ1Giv";                       // Line Notify ªºÅv§ú
+  var token = "DmxZ9D5lK3JtCbRmMDsvs2GHQ79jlzs4OQZ7WuZ1Giv";                       // **æ›´æ”¹æˆè‡ªå·±çš„ Line Notify çš„æ¬Šæ–**
   var message = "\n";
   if(mode=1){
     for(var i=0; i<list.length; i++){
        message= message+list[i]+"\n";
     }                           
-    message = message + "\n©|¥¼¶ñ¼gÂkÀç¨Æ¬G";                         
+    message = message + "\nå°šæœªå¡«å¯«æ­¸ç‡Ÿäº‹æ•…";                         
   }
 
   sendLineNotify(message, token);
@@ -55,4 +55,4 @@ function sendLineNotify(message, token){
    UrlFetchApp.fetch("https://notify-api.line.me/api/notify", options);
 }
 
-//µ{¦¡½Xµ²§ô
+//ç¨‹å¼ç¢¼çµæŸ
