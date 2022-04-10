@@ -1,7 +1,7 @@
 //程式碼開始
 
 function myFunction() {
-  var token = "D3sozz6iPaPBtBBmeTbQWWQbTd6pizXLQBgp9g04SVl";                       // Line Notify 的權杖
+  var token = "D3sozzsdfsdfas";                       // Line Notify 的權杖
   var message = "今天已打勾";
   sendLineNotify(message, token);
 }
