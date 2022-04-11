@@ -40,14 +40,7 @@ function morning1() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning12() {
@@ -69,14 +62,7 @@ function morning12() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening1() {
@@ -98,14 +84,7 @@ function evening1() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night1() {
@@ -127,14 +106,7 @@ function night1() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning2() {
@@ -156,14 +128,7 @@ function morning2() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening2() {
@@ -185,14 +150,7 @@ function evening2() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night2() {
@@ -214,14 +172,7 @@ function night2() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning3() {
@@ -243,14 +194,7 @@ function morning3() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening3() {
@@ -272,14 +216,7 @@ function evening3() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night3() {
@@ -301,14 +238,7 @@ function night3() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning4() {
@@ -330,14 +260,7 @@ function morning4() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening4() {
@@ -359,14 +282,7 @@ function evening4() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night4() {
@@ -388,14 +304,7 @@ function night4() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning5() {
@@ -417,14 +326,7 @@ function morning5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening5() {
@@ -446,14 +348,7 @@ function evening5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night5() {
@@ -475,14 +370,7 @@ function night5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning6() {
@@ -504,14 +392,7 @@ function morning6() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function train() {
@@ -533,14 +414,7 @@ function train() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function bye5() {
@@ -562,14 +436,7 @@ function bye5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function bye6() {
@@ -591,14 +458,7 @@ function bye6() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function GG() {
@@ -620,14 +480,7 @@ function GG() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function backnight() {
@@ -649,12 +502,5 @@ function backnight() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
