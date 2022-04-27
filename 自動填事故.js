@@ -1,39 +1,31 @@
-PropertiesService.getScriptProperties().setProperty('url', 'https://docs.google.com/spreadsheets/d/1F1sLpI1lRJlQc8TqCcTnI2-ZFUGesp2XeJMdoSew1A8/edit#gid=0');     // 班級事故表url
+PropertiesService.getScriptProperties().setProperty('url', 'https://docs.google.com/Xxxxxxxxx');     // 總事故表url
 
 function back() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('歸營事故');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
   var list=new Array();
-  for(var i=30; i<=38; i++){
-    var ax = s.getRange(i,2).getValue();
+  for(var i=30; i<=38; i++){                      // 班級事故表的列數
+    var ax = s.getRange(i,2).getValue();          // getRange(i,<事故欄數>)
     list.push(ax);
   }
-  for(var i=rd; i<rd+10; i++){
+  for(var i=rd; i<rd+10; i++){                    // i<rd+ <班級人數>
     d.getRange(i,cd).setValue(list.shift());
   }
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
 }
 
 function morning1() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(一)早點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -48,21 +40,14 @@ function morning1() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning12() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(一)12節');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -77,21 +62,14 @@ function morning12() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening1() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(一)晚自習');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -106,21 +84,14 @@ function evening1() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night1() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(一)晚點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -135,21 +106,14 @@ function night1() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning2() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(二)早點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -164,21 +128,14 @@ function morning2() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening2() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(二)晚自習');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -193,21 +150,14 @@ function evening2() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night2() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(二)晚點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -222,21 +172,14 @@ function night2() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning3() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(三)早點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -251,21 +194,14 @@ function morning3() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening3() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(三)晚自習');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -280,21 +216,14 @@ function evening3() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night3() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(三)晚點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -309,21 +238,14 @@ function night3() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning4() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(四)早點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -338,21 +260,14 @@ function morning4() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening4() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(四)晚自習');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -367,21 +282,14 @@ function evening4() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night4() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(四)晚點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -396,21 +304,14 @@ function night4() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function morning5() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(五)早點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -425,21 +326,14 @@ function morning5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function evening5() {
   var url = PropertiesService.getScriptProperties().getProperty('url');      // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(五)晚自習');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -454,21 +348,14 @@ function evening5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function night5() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(五)晚點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -483,21 +370,36 @@ function night5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
+}
+
+function morning6() {
+  var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
+  var s=ss.getSheetByName('事故表');
+  var sd=SpreadsheetApp.openByUrl(url);
+  var d=sd.getSheetByName('(六)早點名');
+  var rd=52;                                      // 列
+  var cd=3;                                       // 欄
+  var list=new Array();
+  for(var i=2; i<=10; i++){
+    var ax = s.getRange(i,18).getValue();
+    list.push(ax);
+  }
+  for(var i=rd; i<rd+10; i++){
+    d.getRange(i,cd).setValue(list.shift());
+  }
+  
+  // d.getRange(52,3).setValue(ax);
+  console.log('已填寫');
+
 }
 
 function train() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(五)基教/會操');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -512,21 +414,14 @@ function train() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function bye5() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(五)離營宣教');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -541,21 +436,36 @@ function bye5() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
+}
+
+function bye6() {
+  var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
+  var s=ss.getSheetByName('事故表');
+  var sd=SpreadsheetApp.openByUrl(url);
+  var d=sd.getSheetByName('(六)離營宣教');
+  var rd=52;                                      // 列
+  var cd=3;                                       // 欄
+  var list=new Array();
+  for(var i=16; i<=24; i++){
+    var ax = s.getRange(i,6).getValue();
+    list.push(ax);
+  }
+  for(var i=rd; i<rd+9; i++){
+    d.getRange(i,cd).setValue(list.shift());
+  }
+  
+  // d.getRange(52,3).setValue(ax);
+  console.log('已填寫');
+
 }
 
 function GG() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('(四)社課/莒光');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -570,21 +480,14 @@ function GG() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
 
 function backnight() {
   var url = PropertiesService.getScriptProperties().getProperty('url');       // 取得url值
-  var ss=SpreadsheetApp.openByUrl(url);
+  var ss=SpreadsheetApp.getActiveSpreadsheet();
   var s=ss.getSheetByName('事故表');
-  var sd=SpreadsheetApp.getActiveSpreadsheet();
+  var sd=SpreadsheetApp.openByUrl(url);
   var d=sd.getSheetByName('收假晚點名');
   var rd=52;                                      // 列
   var cd=3;                                       // 欄
@@ -599,12 +502,5 @@ function backnight() {
   
   // d.getRange(52,3).setValue(ax);
   console.log('已填寫');
-  // for(var i=31; i<=38; i++){
-  //   var ax=s.getRange(i,2).getValue();
-  //   var name=s.getRange(i,1).getValue();                                  // 名字
-  // }
-  // var ax=s.getRange(30, 2).getValue();
-  //    if(ax == ""){
-  //       ax = "快點啦幹";
-  //       s.getRange(30, 2).setValue(ax);
+
 }
